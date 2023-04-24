@@ -55,11 +55,11 @@ volumes:
         driver: local
         driver_opts:
             type: none
-            device: /var/www/html
+            device: /home/bdehais/data/wordpress
             o: bind
     db:
         driver: local
         driver_opts:
             type: none
-            device: /var/lib/mysql
+            device: /home/bdehais/data/db
             o: bind
