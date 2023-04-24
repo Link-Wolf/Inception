@@ -1,6 +1,6 @@
 DOCKER_COMPOSE_FILE		= srcs/docker-compose.yml
-DATABASE_VOLUME			= /var/lib/mysql
-WORDPRESS_VOLUME		= /var/www/html
+DATABASE_VOLUME			= /home/bdehais/data/db
+WORDPRESS_VOLUME		= /home/bdehais/data/wordpress
 DATABASE_DOCKER_VOLUME	= srcs_db
 WORDPRESS_DOCKER_VOLUME	= srcs_wordpress
 
