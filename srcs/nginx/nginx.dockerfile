@@ -21,7 +21,7 @@ RUN openssl																		\
 	#Where the certificate will be stored
 	-out /etc/ssl/nginx.crt													 	\
 	# Certificate subject
-	-subj "/C=FR/ST=Alsace/L=Mulhouse/O=Xxxxx, Corp./CN=xxxxxxx.42.fr"
+	-subj "/C=FR/CN=login.42.fr"
 
 # Copy the Nginx configuration file
 COPY ./nginx.conf /etc/nginx/conf.d

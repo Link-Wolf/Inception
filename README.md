@@ -52,11 +52,12 @@
 </details>
 
 <!-- ABOUT THE PROJECT -->
+
 ## About The Project
 
 <div align="center">
   <a>
-	<img src="https://www.docker.com/wp-content/uploads/2022/03/horizontal-logo-monochromatic-white.png" alt="docker logo">
+	<img src="assets/docker.webp" alt="docker logo">
   </a>
 </div>
 </br>
@@ -66,23 +67,25 @@ They will also have teir own Dockerfile written by ourself and called in the ``d
 It's forbidden to use already existing images or use services like DockerHub.
 
 We have to set up:
-- A container containing NGINX with TLSv1.2 or TLSv1.3
-- A container containing Wordpress + php-fpm
-- A container containing MariaDB
-- A volume for the database
-- A second volume for the Wordpress files
-- A ``docker-network`` for the containers to communicate with each other
+
+-   A container containing NGINX with TLSv1.2 or TLSv1.3
+-   A container containing Wordpress + php-fpm
+-   A container containing MariaDB
+-   A volume for the database
+-   A second volume for the Wordpress files
+-   A `docker-network` for the containers to communicate with each other
 
 Each container must restart in case of a crash.
 Here's some details about the project:
-- Two users must be created for Wordpress, one of them must be an administrator
-- The domain name has to be configured to point to our local machine
-- This domain name must be secured with a valid SSL certificate and named ``[login].42.fr`` so in my case it's ``xxxxxxx.42.fr``
 
+-   Two users must be created for Wordpress, one of them must be an administrator
+-   The domain name has to be configured to point to our local machine
+-   This domain name must be secured with a valid SSL certificate and named `[login].42.fr`
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- GETTING STARTED -->
+
 ## Getting Started
 
 Since it is a Docker project, there is few preliminary steps.
@@ -90,58 +93,62 @@ Since it is a Docker project, there is few preliminary steps.
 ### Prerequisites
 
 Having [Docker](https://docker.com) installed on your system and be able to run the `docker compose` command on your system
-Having ``sudo`` privileges.
+Having `sudo` privileges.
 
 ### Installation
 
 1. Clone the repo
 
-   ```sh
-   $> git clone https://github.com/Link-Wolf/Inception.git
-   ```
+    ```sh
+    $> git clone https://github.com/Link-Wolf/Inception.git
+    ```
 
 2. Launch the project
 
-   ```sh
-   $> cd Inception
-   $> make
-   ```
+    ```sh
+    $> cd Inception
+    $> make
+    ```
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- USAGE EXAMPLES -->
+
 ## Usage
 
 <div align="center">
  <a>
-   <img src="https://cdn.discordapp.com/attachments/453159761639112706/1128661887932956692/image.png" alt="our infrastructure">
+   <img src="assets/inception.png" alt="our infrastructure">
  </a>
 </div>
 
 A few rules are implemented in the Makefile to handle the management of the docker:
-- ``up``: Creates the directory used for persitence of data (if needed) and creates then starts the containers in detached mode
-- ``down``: stops and deletes the containers
-- ``stop``: stops the containers
-- ``logs``: prints the logs of the containers
-- ``clean``: Stops and delete the containers and deletes unused docker stuff
-- ``fclean``: Delete absolutely everything deletable via docker
-- ``re``: re-does the whole creation of containers from scratch
 
-Once the containers are up and running, you can access the website by going to ``https://[login].42.fr`` (or localhost:443) and you will be redirected to the Wordpress page.
+-   `up`: Creates the directory used for persitence of data (if needed) and creates then starts the containers in detached mode
+-   `down`: stops and deletes the containers
+-   `stop`: stops the containers
+-   `logs`: prints the logs of the containers
+-   `clean`: Stops and delete the containers and deletes unused docker stuff
+-   `fclean`: Delete absolutely everything deletable via docker
+-   `re`: re-does the whole creation of containers from scratch
+
+Once the containers are up and running, you can access the website by going to `https://[login].42.fr` (or localhost:443) and you will be redirected to the Wordpress page.
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- ROADMAP -->
+
 ## Roadmap
 
-- [ ] Add bonus features
-- [x] Add back to top links
+-   [ ] Add bonus features
+-   [x] Add back to top links
 
 See the [open issues](https://github.com/Link-Wolf/Inception/issues) for a full list of proposed features (and known issues).
 
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTRIBUTING -->
+
 ## Contributing
 
 If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
@@ -156,6 +163,7 @@ Don't forget to give the project a star! Thanks again!
 <p align="right">(<a href="#top">back to top</a>)</p>
 
 <!-- CONTACT -->
+
 ## Contact
 
 Mail : xxxxxxx@student.42mulhouse.fr
